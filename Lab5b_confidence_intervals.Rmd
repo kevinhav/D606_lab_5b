@@ -19,6 +19,7 @@ editor_options:
 
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(eval = TRUE, message = FALSE, warning = FALSE)
+
 ```
 
 If you have access to data on an entire population, say the opinion of
@@ -399,6 +400,11 @@ can explain the 1% difference as a result of the "sample" of constructed
 confidence levels having some randomness due to the underlying sampling
 and bootstrapping process.**
 
+```{r}
+knitr::include_graphics("ci.png")
+```
+
+
 ![confidence intervals](ci.png)
 
 ------------------------------------------------------------------------
@@ -476,7 +482,7 @@ intervals decreased as sample size increased; an inverse relationship.**
 **I did not see significant changes in the interval as bootstrapping
 resamples increased. This is because bootstrapping "inherits" the
 sampling error of the sample itself, which is derived from the
-proportion and size of the sample only.
-(**$SE_\hat{p} = \sqrt{\frac{p(1-p)}{n}}$)
+proportion and size of the sample only.**
+
 
 ------------------------------------------------------------------------
