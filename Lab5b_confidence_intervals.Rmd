@@ -189,12 +189,12 @@ intervals using the **infer** package.
 Below is an overview of the functions we will use to construct this
 confidence interval:
 
-| Function    | Purpose                                                                                                                                    |
+| Function | Purpose |
 |--------------------------------------------|----------------------------|
-| `specify`   | Identify your variable of interest                                                                                                         |
-| `generate`  | The number of samples you want to generate                                                                                                 |
+| `specify` | Identify your variable of interest |
+| `generate` | The number of samples you want to generate |
 | `calculate` | The sample statistic you want to do inference with, or you can also think of this as the population parameter you want to do inference for |
-| `get_ci`    | Find the confidence interval                                                                                                               |
+| `get_ci` | Find the confidence interval |
 
 This code will find the 95 percent confidence interval for proportion of
 US adults who think climate change affects their local community.
@@ -392,12 +392,14 @@ shinyApp(
     confidence level? If not, explain why. Make sure to include your
     plot in your answer.
 
-**47 out of 50 constructured confidence intervals capture the population
+**47 out of 50 constructed confidence intervals capture the population
 proportion. This is not exactly equal to the proportion we would expect
 (94% compared to our 95% confidence level), but it is very close and we
 can explain the 1% difference as a result of the "sample" of constructed
 confidence levels having some randomness due to the underlying sampling
 and bootstrapping process.**
+
+![confidence intervals](ci.png)
 
 ------------------------------------------------------------------------
 
